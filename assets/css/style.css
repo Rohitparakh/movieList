@@ -5285,3 +5285,75 @@ main .col-md-12:last-of-type .movie-list-2 {
     float: right;
     opacity: .7;
 }
+
+
+/*--------------------------------------------
+CUSTOM
+--------------------------------------------*/
+
+
+nav.slider {
+    position: relative;
+   z-index: 11;
+  }
+  
+  nav.slider ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding:0;
+  }
+  
+  nav.slider li {
+    transition: color 0.2s, background-color 0.2s;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: rgba(0,0,0,1);
+    line-height: 150%;
+    display: inline-block;
+    border-radius: 40px;
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  nav.slider li:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  nav.slider li.active {
+    pointer-events: none;
+    color: #fff;
+    background: #9352b3;
+  }
+  
+  nav.slider span {
+    transition: width 0.2s, left 0.2s;
+    border-radius: 40px;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    display: none;
+    width: 140px;
+    height: 48px;
+    background-color: #9352b3;
+  }
+  
+
+  .sticky{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+
+}
+
+nav.slider.sticky{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
